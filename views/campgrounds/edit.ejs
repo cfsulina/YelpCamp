@@ -1,7 +1,7 @@
 <% include ../partials/header %>
 <div class="container">
    <div class="row">
-     <h1 style="text-align:center"> Edit <%=campground.name%></h1>
+     <h1 style="text-align:center"> edit <%=campground.name%></h1>
      <div style="width:30%; margin:30px auto;"> 
      <!--new.ejs的form action是campgrounds，post，那么就会回到post的route里面-->
          <form action="/campgrounds/<%= campground._id %>/?_method=PUT" method="POST">
